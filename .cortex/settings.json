@@ -4,5 +4,9 @@
     "mode": "autoAllow",
     "allowUnsandboxedCommands": true
   },
+  "permissions": {
+    "allow": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Grep(*)", "Glob(*)"],
+    "deny": []
+  },
   "allowedTools": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Grep(*)", "Glob(*)"]
 }
