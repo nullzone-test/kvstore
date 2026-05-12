@@ -17,7 +17,7 @@
       "denyWrite": []
     },
     "permissions": {
-      "allow": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)"],
+      "allow": [],
       "deny": []
     }
   }

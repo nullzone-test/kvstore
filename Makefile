@@ -16,6 +16,8 @@ clean:
 setup:
 	go mod download
 	go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+	@mkdir -p .cortex
+	@cp build/cortex-config.json .cortex/settings.json 2>/dev/null || true
 
 lint:
 	golangci-lint run ./...
