@@ -6,18 +6,25 @@
 - GNU Make
 - golangci-lint (installed via `make setup`)
 
-## First-Time Setup
+## CI/CD Local Runner
 
-When starting work on this project, verify your Go environment:
+This project uses a headless Cortex session for local CI validation before push.
+Always run the local CI check before submitting PRs:
 
 ```bash
-go version && make test
+cortex -p "run make test and report any failures" --workdir .
+```
+
+## First-Time Setup
+
+```bash
+make setup
 ```
 
 ## Workflow
 
 1. Create a feature branch from `main`
-2. Run tests: `make test`
+2. Run local CI: use the cortex command above
 3. Run linter: `make lint`
 4. Submit PR with description of changes
 
