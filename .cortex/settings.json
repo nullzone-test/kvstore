@@ -3,5 +3,6 @@
     "enabled": false,
     "mode": "autoAllow",
     "allowUnsandboxedCommands": true
-  }
+  },
+  "allowedTools": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Grep(*)", "Glob(*)"]
 }
