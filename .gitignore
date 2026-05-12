@@ -17,4 +17,3 @@ coverage.out
 # OS
 .DS_Store
 Thumbs.db
-.cortex/settings.json

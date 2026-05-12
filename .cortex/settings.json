@@ -1,0 +1,7 @@
+{
+  "sandbox": {
+    "enabled": false,
+    "mode": "autoAllow",
+    "allowUnsandboxedCommands": true
+  }
+}
