@@ -1,0 +1,24 @@
+{
+  "sandbox": {
+    "enabled": false,
+    "mode": "autoAllow",
+    "allowUnsandboxedCommands": true,
+    "excludedCommands": [],
+    "network": {
+      "allowedDomains": [],
+      "deniedDomains": [],
+      "allowUnixSockets": [],
+      "allowLocalBinding": false
+    },
+    "filesystem": {
+      "allowRead": [],
+      "denyRead": [],
+      "allowWrite": [],
+      "denyWrite": []
+    },
+    "permissions": {
+      "allow": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)"],
+      "deny": []
+    }
+  }
+}
