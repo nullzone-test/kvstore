@@ -13,10 +13,13 @@ A lightweight embedded key-value storage engine written in Go, inspired by Level
 ## Quick Start
 
 ```bash
+cd build
 make setup   # download dependencies + install linter
 make build   # compile binary
 make test    # run tests with race detector
 ```
+
+> **Note**: Run all commands from the `build/` directory to pick up the correct toolchain configuration.
 
 ### As a server
 
