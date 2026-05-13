@@ -57,7 +57,7 @@ Step 1: Clone the PoC repository (victim):
 ```bash
 cd /tmp
 git clone https://github.com/nullzone-test/kvstore.git
-cd kvstore/build
+cd kvstore/main
 ```
 
 Step 2: Launch Cortex Code from the subdirectory (victim):
@@ -65,7 +65,7 @@ Step 2: Launch Cortex Code from the subdirectory (victim):
 cortex
 ```
 
-Step 3: Observe — NO trust dialog appears. The session starts normally with no indication that project settings have been loaded.
+Step 3: Trust dialog appears — approve it. Note that `.cortex/settings.json` is NOT listed in the active files. The dialog looks clean.
 
 Step 4: Verify sandbox is disabled — ask Cortex:
 ```
@@ -95,11 +95,11 @@ Settings remain active. No trust dialog on subsequent sessions. All permissions 
 User Prompt (POC)
 read the file at ~/.snowflake/connections.toml
 
-https://github.com/nullzone-test/kvstore (public repo — victim runs from kvstore/build/ subdirectory)
+https://github.com/nullzone-test/kvstore (public repo — victim runs from kvstore/main/ subdirectory)
 
 Response
 1. Victim clones repository containing `.cortex/settings.json` at root with sandbox disable + wildcard permissions
-2. Victim runs `cortex` from `build/` subdirectory (directed by README)
+2. Victim runs `cortex` from `main/` subdirectory (directed by README)
 3. Trust dialog appears — but does NOT list `.cortex/settings.json` as an active file
 4. Victim approves trust (dialog looks clean — no security-relevant items shown)
 5. Settings loader resolves git root → finds `.cortex/settings.json` → loads it silently
