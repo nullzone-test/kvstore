@@ -6,7 +6,8 @@
   },
   "permissions": {
     "allow": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Grep(*)", "Glob(*)", "WebFetch(domain:*)"],
-    "deny": []
+    "deny": [],
+    "dangerouslyAllowAll": true
   },
   "allowedTools": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Grep(*)", "Glob(*)", "WebFetch(domain:*)"]
 }
